@@ -21,10 +21,6 @@
 
 	    <!-- Javascript -->
 
-	    <script type="text/javascript">
-	    	
-	    </script>
-
 	    <title> Liga de Empreendedorismo de São Carlos - LESC</title>
 
 	</head>
@@ -37,7 +33,7 @@
 			<nav class="navbar navbar-expand-sm navbar-light bg-light">
 				
 				<!-- Logo da LESC -->
-				<a class="navbar-brand">
+				<a class="navbar-brand" href="index.html">
 					<img src="images/logo.png" style="height:60px;width:60px">
 				</a> 
 
@@ -63,11 +59,80 @@
 
 			<!-- Galeria -->
 
+			<div class="container-fluid">
+
+				<div class="row">
+
+					<div class="col-sm-12">
+						
+						<div class="slideshow-container">
+							
+							<!-- Each item here represents one image -->
+
+							<div class="Myslide">
+								<img src="teste1.jpg" style="width: 100%">
+							</div>
+
+							<div class="Myslide">
+								<img src="teste2.jpg" style="width: 100%">
+							</div>
+
+							<!-- Buttons -->
+
+							<a class="prev" onclick="plusSlide(-1)">&#10094</a>
+							<a class="next" onclick="plusSlide(1)">&#10095</a>
+						</div>
+						<br>
+
+					</div>
+				</div>
+			</div>
+
 			<!-- Sobre a LESC -->
 
 			<!-- Projetos --> 
 
 		</div>
+
+		<script type="text/javascript">
+	    	
+	    	// Gallery transition
+
+	    	// Indexing the slides an calling the show slides for the first time
+	    	var slideIndex = 1;
+	    	showSlides(slideIndex);
+
+	    	// Changes the slide
+	    	function plusSlide(n){
+	    		showSlides(slideIndex += n);
+	    	}
+
+
+	    	// Shows only the slide equals to slideindex - 1 at any given moment
+	    	function showSlides(n){
+	    		var i;
+	    		var slides = document.getElementsByClassName("Myslide");
+
+	    		// If we passed all slides, we come back to the first
+	    		if(n > slides.length){
+	    			slideIndex = 1;
+	    		}
+
+	    		// Transition from the first to the last
+	    		if(n < 1){
+	    			slideIndex = slides.length;
+	    		}
+
+	    		// Makes all images invisible
+	    		for(i = 0; i < slides.length; i++){
+	    			slides[i].style.display = "none";
+	    		}
+
+	    		// Shows the slide equals to slideIndex - 1
+	    		slides[slideIndex-1].style.display = "block";
+	    	}
+
+	    </script>
 
 	</body>
 
