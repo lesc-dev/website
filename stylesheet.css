@@ -49,3 +49,57 @@ div[class*='col']{
 .bg-light{
 	background-color: white !important;
 }
+
+.projetos{
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.projetos:hover {
+	opacity: 0.3;
+	backface-visibility: visible;
+}
+
+.overlay:hover {
+	opacity: .7;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #FFFFFF;
+}
+
+.project-text{
+  opacity: 1 !important;
+  color: #000000;
+  font-size: 30px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.footer{
+	margin-top: 20px;
+	background-color: rgb(31,31,31);
+}
+
+.footer p{
+	padding: 30px;
+	color: white;
+}
