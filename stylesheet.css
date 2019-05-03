@@ -1,7 +1,22 @@
+/* Minor Tweaks */
+.bg-light{
+	background-color: white !important;
+}
+
+div[class*='col']{
+	padding: 0px;
+}
+
+/* Slideshow style */
+
 .slideshow-container{
 	width: 100%;
 	position: relative;
 	margin: auto;
+}
+
+.Myslide img{
+	height: 88vh !important;
 }
 
 .prev, .next{
@@ -28,6 +43,8 @@
   background-color: rgba(0,0,0,0.8);
 }
 
+/* About Section Style */
+
 .texto-sobre p{
 	font-size: 3vh;
 	text-align: justify;
@@ -42,13 +59,7 @@
 	padding-top: 30px;
 }
 
-div[class*='col']{
-	padding: 0px;
-}
-
-.bg-light{
-	background-color: white !important;
-}
+/* Projects section */
 
 .projetos{
   opacity: 1;
@@ -94,12 +105,17 @@ div[class*='col']{
   text-align: center;
 }
 
+
+/* Footer section */
 .footer{
-	margin-top: 20px;
 	background-color: rgb(31,31,31);
 }
 
 .footer p{
 	padding: 30px;
 	color: white;
+}
+
+.footer-item{
+	text-align: center;
 }
