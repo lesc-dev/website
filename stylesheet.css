@@ -15,9 +15,9 @@ div[class*='col']{
 	margin: auto;
 }
 
-.Myslide img{
+/*.Myslide img{
 	height: 88vh !important;
-}
+}*/
 
 .prev, .next{
 	cursor: pointer;
