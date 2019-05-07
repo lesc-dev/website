@@ -120,25 +120,36 @@
 
 				<div class="row">
 					
-					<div class="col-md-3 col-sm-6">
+					<div class="col-md-3 col-sm-6 aproxima">
 						<img class="projetos" src="images/aproxima.png">
-							<div class="overlay	">
+							<div class="overlay" onclick="open_project(aproxima)">
 								<div class="project-text">
 									Aproxima Sanca
+								</div>
+							</div>
+							<div id="aproxima" class="aproxima-box">
+								<div class="aproxima-content">
+									<p> O aproxima é um projeto muito legal....</p>
 								</div>
 							</div>
 					</div>
 
 					<div class="col-md-3 col-sm-6">
 						<img class="projetos" src="images/chances.png">
-							<div class="overlay	">
+							<div class="overlay" onclick="open_project(chances)">
 								<div class="project-text">
 									Chances
 								</div>
 							</div>
+							<div id="chances" class="chances-box">
+								<div class="chances-content">
+									<p> O Chances é um projeto muito legal....</p>
+								</div>
+							</div>
 					</div>
 
-					<div class="col-md-3 col-sm-6">
+
+					<div class="col-md-3 col-sm-6 starteca">
 						<img class="projetos" src="images/starteca.jpg">
 							<div class="overlay	">
 								<div class="project-text">
@@ -222,6 +233,23 @@
 	    		// Shows the slide equals to slideIndex - 1
 	    		slides[slideIndex-1].style.display = "block";
 	    	}
+
+	    	// Projects popups
+	    	var chances = document.getElementById("chances");
+	    	var aproxima = document.getElementById("aproxima");
+
+	    	function open_project(element){
+	    		element.style.display = "block";
+	    	}
+
+	    	window.onclick = function(event) {
+				  if (event.target == chances) {
+				    chances.style.display = "none";
+				  }
+				  else if(event.target == aproxima){
+				  	aproxima.style.display = "none";
+				  }
+			} 
 
 	    </script>
 
