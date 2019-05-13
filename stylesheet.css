@@ -160,6 +160,7 @@ div[class*='col']{
 /* Footer section */
 .footer{
 	background-color: rgb(31,31,31);
+  position: absolute; 
 }
 
 .footer p{
@@ -169,4 +170,29 @@ div[class*='col']{
 
 .footer-item{
 	text-align: center;
+}
+
+/* Members Section */
+
+.member-snippet{
+  padding: 18px;
+}
+
+.member-snippet img{
+  width: 180px;
+  height: 180px; 
+  border: 1px solid black; 
+  margin: 15px;
+}
+
+.member-snippet h5{
+  font-weight: bold;
+}
+
+.member-snippet h6{
+  color: #ff8800;
+}
+
+.member-snippet-card{
+  float:left;
 }
