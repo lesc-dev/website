@@ -196,3 +196,11 @@ div[class*='col']{
 .member-snippet-card{
   float:left;
 }
+
+.contact-form{
+  padding: 25px;
+}
+
+.contact-text{
+  padding: 25px;
+}
