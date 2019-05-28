@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+
+<html lang='pt-br'>
+
+	<head>
+
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+		<!-- Bootstrap Import -->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+	    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+
+	    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+	    <!-- CSS -->
+	    <link rel="stylesheet" type="text/css" href="stylesheet.css"/>
+
+	    <!-- Javascript -->
+
+	    <title> Liga de Empreendedorismo de São Carlos - LESC</title>
+
+	</head>
+
+	<body id='index'>
+		
+		<div class="container-fluid">
+
+			<!-- Navbar -->
+			<nav class="navbar navbar-expand-sm navbar-light bg-light">
+				
+				<!-- Logo da LESC -->
+				<a class="navbar-brand" href="index.html">
+					<img src="images/logo-branco-LESC.png" style="height:60px;width:60px">
+				</a> 
+
+				<!-- Botão de colapso -->
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    				<span class="navbar-toggler-icon"></span>
+  				</button>
+
+  				<div class="collapse navbar-collapse" id="collapsibleNavbar">
+					<!-- Links da navbar -->
+					<ul class="navbar-nav">
+						<li class="nav-item"><a class='nav-link' href="sobre.html">Sobre</a></li>
+
+						<li class="nav-item"><a class='nav-link' href="preaceleracao.html">Pré-Aceleração</a></li>
+
+						<li class="nav-item"><a class='nav-link' href="membros.html">Membros</a></li>
+
+						<li class="nav-item"><a class='nav-link' href="contato.html">Contato</a></li>
+					</ul>
+
+				</div>
+			</nav>
+		</div>
+
+			<!-- Galeria -->
+
+			<div class="container-fluid">
+
+				<div class="row">
+
+					<div class="col-sm-12">
+						
+						<div class="slideshow-container">
+							
+							<!-- Each item here represents one image -->
+
+							<div class="Myslide">
+								<img src="images/criar_startup.png" style="width: 100%">
+							</div>
+
+							<div class="Myslide">
+								<img src="teste2.jpg" style="width: 100%">
+							</div>
+
+							<!-- Buttons -->
+
+							<a class="prev" onclick="plusSlide(-1)">&#10094</a>
+							<a class="next" onclick="plusSlide(1)">&#10095</a>
+						</div>
+						<br>
+
+					</div>
+				</div>
+			</div>
+
+			<!-- Sobre a LESC -->
+
+			<div class="container-fluid">
+
+				<div class="row">
+					
+					<div class="col-sm-6 logo-sobre">
+						<img class="img-fluid" src="images/logo-branco-LESC.png">
+					</div>
+
+					<div class="col-sm-6 texto-sobre">
+						<h1>Sobre a LESC</h1>
+						<p> Promover o empreendedorismo dentro da universidade, integrar o ecossistema empreendedor de São
+							Carlos ao ecossistema universitário, ajudar os alunos a colocarem as suas ideias em prática para
+							transformarem o mundo.</p>
+						<p> Essa é nossa missão e é isso que nos descreve. Estamos aqui para ajudar a construir e desenvolver
+							cada vez mais essa cidade maravilhosa e com tanto potencial. </p>
+					</div>
+
+				</div>
+
+			</div>
+
+			<!-- Projetos --> 
+
+			<div class="container-fluid">
+
+				<div class="row">
+					
+					<div class="col-md-3 col-sm-6 aproxima">
+						<img class="projetos" src="images/aproxima.png">
+							<div class="overlay" onclick="open_project(aproxima)">
+								<div class="project-text">
+									Aproxima Sanca
+								</div>
+							</div>
+							<div id="aproxima" class="aproxima-box">
+								<div class="aproxima-content">
+									<p> O aproxima é um projeto muito legal....</p>
+								</div>
+							</div>
+					</div>
+
+					<div class="col-md-3 col-sm-6">
+						<img class="projetos" src="images/chances.png">
+							<div class="overlay" onclick="open_project(chances)">
+								<div class="project-text">
+									Chances
+								</div>
+							</div>
+							<div id="chances" class="chances-box">
+								<div class="chances-content">
+									<img style="width: 100%" src="images/chances.png">
+
+									<p style="text-align: justify;"> Mais do que simplesmente criar empregos, o Chances quer criar oportunidades ideias. Um jovem tem sonhos, tem paixões e habilidades. A força que o faz levantar da cama todos os dias tem que ser a força que o faz trabalhar na certeza de estar cumprindo o seu papel no mundo.</p>
+
+									<p style="text-align: justify;">Quem poderia ser o colaborador mais ideal para uma startup do que aquele que compartilha dos mesmos valores e objetivos? Conectando por propósito, o Chances leva a pessoa certa ao lugar certo para transformar o mundo.</p>
+								</div>
+							</div>
+					</div>
+
+
+					<div class="col-md-3 col-sm-6 starteca">
+						<img class="projetos" src="images/starteca.jpg">
+							<div class="overlay	">
+								<div class="project-text">
+									Starteca
+								</div>
+							</div>
+					</div>
+
+					<div class="col-md-3 col-sm-6">
+						<img class="projetos" src="images/logo-preto-LESC.png">
+							<div class="overlay	">
+								<div class="project-text">
+									Em Breve
+								</div>
+							</div>
+					</div>
+
+
+				</div>
+
+			</div>
+
+			<!-- Parterns
+
+			<div class="container-fluid">
+				<div class="row" style="margin-bottom: 5px;">
+					<div class="col-md-12"><h2 style="background-color: #ff8800; color: white; padding: 35px;"> Nossos Parceiros </h2></div>
+					
+					<div class="col-md-12">
+						<ul class="partners">
+						<li><img src="images/projeto1.png"></li>
+						<li><img src="images/projeto1.png"></li>
+						<li><img src="images/projeto1.png"></li>
+						<li><img src="images/projeto1.png"></li>
+						<li><img src="images/projeto1.png"></li>
+						<li><img src="images/projeto1.png"></li>
+						<li><img src="images/projeto1.png"></li>
+						<li><img src="images/projeto1.png"></li>
+						</ul>
+
+					</div>
+
+				</div>
+
+			</div>
+
+			-->
+
+			<!-- Rodapé --> 
+			<div class="container-fluid">
+				
+				<div class="row">
+					<div class="col-sm-12 footer">
+						<div class="container-fluid">
+							<div class="row">
+								<div class="col-md-6 footer-item">
+									<p style="font-size: 25px;">Siga-nos nas redes sociais!<br>
+									<a href="https://www.facebook.com/ligadeempreendedorismosc/" target="_blank"><i class="fa fa-facebook-f" style="font-size:25px; color:white;"></i></a>
+									<a href="https://github.com/lesc-dev" target="_blank"><i class="fa fa-github" style="font-size: 25px; color:white;"></i></a></p>
+								</div>
+								<div class="col-md-6 footer-item">
+									<p style="font-size: 25px;">Entre em contato conosco<br>
+									E-mail: lesc.contato@gmail.com</p>
+								</div>
+							</div>
+						</div>
+						<p style="text-align: center; padding: 0px;">Liga de Empreendedorismo de São Carlos - 2019 </p>
+					</div>
+				</div>
+
+			</div>
+
+		<script type="text/javascript">
+	    	
+	    	// Gallery transition
+
+	    	// Indexing the slides an calling the show slides for the first time
+	    	var slideIndex = 1;
+	    	showSlides(slideIndex);
+
+	    	// Changes the slide
+	    	function plusSlide(n){
+	    		showSlides(slideIndex += n);
+	    	}
+
+
+	    	// Shows only the slide equals to slideindex - 1 at any given moment
+	    	function showSlides(n){
+	    		var i;
+	    		var slides = document.getElementsByClassName("Myslide");
+
+	    		// If we passed all slides, we come back to the first
+	    		if(n > slides.length){
+	    			slideIndex = 1;
+	    		}
+
+	    		// Transition from the first to the last
+	    		if(n < 1){
+	    			slideIndex = slides.length;
+	    		}
+
+	    		// Makes all images invisible
+	    		for(i = 0; i < slides.length; i++){
+	    			slides[i].style.display = "none";
+	    		}
+
+	    		// Shows the slide equals to slideIndex - 1
+	    		slides[slideIndex-1].style.display = "block";
+	    	}
+
+	    	// Projects popups
+	    	var chances = document.getElementById("chances");
+	    	var aproxima = document.getElementById("aproxima");
+
+	    	function open_project(element){
+	    		element.style.display = "block";
+	    	}
+
+	    	window.onclick = function(event) {
+				  if (event.target == chances) {
+				    chances.style.display = "none";
+				  }
+				  else if(event.target == aproxima){
+				  	aproxima.style.display = "none";
+				  }
+			} 
+
+	    </script>
+
+	</body>
+
+</html>
