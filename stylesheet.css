@@ -7,6 +7,13 @@ div[class*='col']{
 	padding: 0px;
 }
 
+/* Navbar style */
+
+.disabled{
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
 /* Slideshow style */
 
 .slideshow-container{
@@ -192,6 +199,14 @@ div[class*='col']{
 
 .footer-item{
 	text-align: center;
+}
+
+.footer-item a{
+  padding: 10px;
+}
+
+.footer-item p{
+  font-size: 15px !important;
 }
 
 /* Members Section */
