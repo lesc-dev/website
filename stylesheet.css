@@ -7,6 +7,13 @@ div[class*='col']{
 	padding: 0px;
 }
 
+/* Navbar style */
+
+.disabled{
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
 /* Slideshow style */
 
 .slideshow-container{
