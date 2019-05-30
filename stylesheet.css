@@ -194,6 +194,14 @@ div[class*='col']{
 	text-align: center;
 }
 
+.footer-item a{
+  padding: 10px;
+}
+
+.footer-item p{
+  font-size: 15px !important;
+}
+
 /* Members Section */
 
 .member-snippet{
