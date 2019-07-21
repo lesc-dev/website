@@ -272,9 +272,10 @@ div[class*='col']{
 }
 
 .about_LESC{
-  font-size: 30px;
+  font-size: 22px;
   text-align: justify;
-  padding: 40px;
+  padding: 75px;
+  padding-top: 0px;
 }
 
 .about_LESC_img{
