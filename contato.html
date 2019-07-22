@@ -75,7 +75,7 @@
 				
 				<div class="col-md-6">
 					
-					<form class="contact-form">
+					<form class="contact-form" method="post">
 
 						<div class="form-group">
 							<label for="text">Seu nome:</label>
@@ -92,9 +92,25 @@
 							<textarea id="mensagem" class="form-control" required></textarea>
 						</div>
 
-						<button type="submit" class="btn btn-primary btn-block" style="background-color: #FF8800; border: none;">Enviar</button>
+						<button type="submit" class="btn btn-primary btn-block" style="background-color: #FF8800; border: none;" onclick="sendMail()">Enviar</button>
 
 					</form>
+
+					<script type="text/javascript">
+
+						function sendMail(){
+							body = document.getElementById("mensagem").value;
+							window.open('mailto:lesc.contato@gmail.com?subject=Contato%20Via%20Site&body='+ body);
+						}
+
+					</script>
+
+					<!--
+					<?php 
+						mail("lesc.contato@gmail.com", $_POST['nome'] + "-" + $_POST['email'], 
+						$_POST['mensagem']);
+					?>
+					-->
 
 				</div>
 
