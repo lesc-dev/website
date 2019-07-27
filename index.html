@@ -83,8 +83,8 @@
 
 							<!-- Buttons -->
 
-							<a class="prev" onclick="plusSlide(-1)">&#10094</a>
-							<a class="next" onclick="plusSlide(1)">&#10095</a>
+							<a class="prev" id="prev" onclick="plusSlide(-1)">&#10094</a>
+							<a class="next" id="next" onclick="plusSlide(1)">&#10095</a>
 						</div>
 						<br>
 
@@ -186,18 +186,34 @@
 
 			</div>
 
-			<!-- Parterns
+			<!-- Partners 
 
 			<div class="container-fluid">
 				<div class="row" style="margin-bottom: 5px;">
 					<div class="col-md-12"><h2 style="background-color: #ff8800; color: white; padding: 35px;"> Nossos Parceiros </h2></div>
 					
 					<div class="col-md-12">
-						<ul class="partners">
+						<ul class="partners partners-big">
 						<li><img src="images/projeto1.png"></li>
 						<li><img src="images/projeto1.png"></li>
 						<li><img src="images/projeto1.png"></li>
 						<li><img src="images/projeto1.png"></li>
+						</ul>
+
+					</div>
+
+					<div class="col-md-12">
+						<ul class="partners partners-medium">
+						<li><img src="images/projeto1.png"></li>
+						<li><img src="images/projeto1.png"></li>
+						<li><img src="images/projeto1.png"></li>
+						<li><img src="images/projeto1.png"></li>
+						</ul>
+
+					</div>
+
+					<div class="col-md-12">
+						<ul class="partners partners-small">
 						<li><img src="images/projeto1.png"></li>
 						<li><img src="images/projeto1.png"></li>
 						<li><img src="images/projeto1.png"></li>
@@ -211,7 +227,6 @@
 			</div>
 
 			-->
-
 			<!-- Rodapé --> 
 			<div class="container-fluid">
 				
@@ -243,6 +258,12 @@
 	    	// Gallery transition
 
 	    	// Indexing the slides an calling the show slides for the first time
+	    	var slides = document.getElementsByClassName("Myslide");
+	    	if(slides.length == 1){
+	    		document.getElementById("prev").style.display = "none";
+	    		document.getElementById("next").style.display = "none";
+	    	}
+
 	    	var slideIndex = 1;
 	    	showSlides(slideIndex);
 
@@ -255,7 +276,7 @@
 	    	// Shows only the slide equals to slideindex - 1 at any given moment
 	    	function showSlides(n){
 	    		var i;
-	    		var slides = document.getElementsByClassName("Myslide");
+	    		slides = document.getElementsByClassName("Myslide");
 
 	    		// If we passed all slides, we come back to the first
 	    		if(n > slides.length){

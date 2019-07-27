@@ -199,9 +199,23 @@ div[class*='col']{
 
 /* Partners Section */
 
+.partners-big li img{
+  margin: 0 auto;
+  width: 75%;
+}
+
+.partners-medium li img{
+  display: block;
+  margin: 0 auto;
+  width: 50%;
+}
+
+.partners-small li img{
+  margin: 0 auto;
+  width: 25%;
+}
+
 .partners {
-  width: 100%;
-  margin-left: 5px;
   padding: 0px;
 }
 
