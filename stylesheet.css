@@ -134,6 +134,10 @@ div[class*='col']{
   border-radius: 13px;
 }
 
+.chances-content p{
+  text-align: center;
+}
+
 .aproxima-box{
   display: none;
   position: fixed; /* Stay in place */
@@ -156,6 +160,36 @@ div[class*='col']{
   border-radius: 13px;
 }
 
+.aproxima-content p{
+  text-align: justify;
+}
+
+.startingup-box{
+  display: none;
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.startingup-content{
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 50%; /* Could be more or less, depending on screen size */
+  border-radius: 13px;
+}
+
+.startingup-content p{
+  text-align: justify;
+}
+
 .close:hover,
 .close:focus {
   color: black;
@@ -165,9 +199,23 @@ div[class*='col']{
 
 /* Partners Section */
 
+.partners-big li img{
+  margin: 0 auto;
+  width: 75%;
+}
+
+.partners-medium li img{
+  display: block;
+  margin: 0 auto;
+  width: 50%;
+}
+
+.partners-small li img{
+  margin: 0 auto;
+  width: 25%;
+}
+
 .partners {
-  width: 100%;
-  margin-left: 5px;
   padding: 0px;
 }
 
@@ -251,4 +299,33 @@ div[class*='col']{
 
 .contact-text{
   padding: 25px;
+}
+
+/* About Page */
+
+.values{
+  width: 100%;
+  height: 50%;
+}
+
+.value_box{
+  border: 0.5px solid white;
+  border-radius: 5px;
+  margin: 0px;
+}
+
+.value_text{
+  padding: 15px;
+  text-align: justify;
+}
+
+.about_LESC{
+  font-size: 22px;
+  text-align: justify;
+  padding: 75px;
+  padding-top: 0px;
+}
+
+.about_LESC_img{
+  align-items: center;
 }

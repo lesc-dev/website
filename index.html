@@ -83,8 +83,8 @@
 
 							<!-- Buttons -->
 
-							<a class="prev" onclick="plusSlide(-1)">&#10094</a>
-							<a class="next" onclick="plusSlide(1)">&#10095</a>
+							<a class="prev" id="prev" onclick="plusSlide(-1)">&#10094</a>
+							<a class="next" id="next" onclick="plusSlide(1)">&#10095</a>
 						</div>
 						<br>
 
@@ -121,7 +121,7 @@
 
 				<div class="row">
 					
-					<div class="col-md-3 col-sm-6 aproxima">
+					<div class="col-md-4 aproxima">
 						<img class="projetos" src="images/aproxima.png">
 							<div class="overlay" onclick="open_project(aproxima)">
 								<div class="project-text">
@@ -130,12 +130,19 @@
 							</div>
 							<div id="aproxima" class="aproxima-box">
 								<div class="aproxima-content">
-									<p> O aproxima é um projeto muito legal....</p>
+									<img style="width: 100%" src="images/aproxima.png">
+									<p style="padding-top: 25px;"> O Aproxima é um projeto que tem como objetivo integrar 
+									os grupos extracurriculares das universidades de São Carlos,
+									promover e curar a criação de uma comunidade orgânica entre todos os players da cidade.</p>
+
+									<p> Por meio de grupos de contato, promoção de auxílios, trabalhos em conjunto e de happy hours, o Aproxima efetivamente aproxima os grupos e players para que juntos possamos desenvolver cada vez mais o ecossistema da nossa cidade.</p>
+
+									<p> Se interessou e quer saber mais? Entre em contato conosco e vamos conversar! </p>
 								</div>
 							</div>
 					</div>
 
-					<div class="col-md-3 col-sm-6">
+					<div class="col-md-4">
 						<img class="projetos" src="images/chances.png">
 							<div class="overlay" onclick="open_project(chances)">
 								<div class="project-text">
@@ -146,28 +153,30 @@
 								<div class="chances-content">
 									<img style="width: 100%" src="images/chances.png">
 
-									<p style="text-align: justify;"> Mais do que simplesmente criar empregos, o Chances quer criar oportunidades ideias. Um jovem tem sonhos, tem paixões e habilidades. A força que o faz levantar da cama todos os dias tem que ser a força que o faz trabalhar na certeza de estar cumprindo o seu papel no mundo.</p>
+									<p> Mais do que simplesmente criar empregos, o Chances quer criar oportunidades ideias. Um jovem tem sonhos, tem paixões e habilidades. A força que o faz levantar da cama todos os dias tem que ser a força que o faz trabalhar na certeza de estar cumprindo o seu papel no mundo.</p>
 
-									<p style="text-align: justify;">Quem poderia ser o colaborador mais ideal para uma startup do que aquele que compartilha dos mesmos valores e objetivos? Conectando por propósito, o Chances leva a pessoa certa ao lugar certo para transformar o mundo.</p>
+									<p>Quem poderia ser o colaborador mais ideal para uma startup do que aquele que compartilha dos mesmos valores e objetivos? Conectando por propósito, o Chances leva a pessoa certa ao lugar certo para transformar o mundo.</p>
 								</div>
 							</div>
 					</div>
 
 
-					<div class="col-md-3 col-sm-6 starteca">
+					<div class="col-md-4">
 						<img class="projetos" src="images/starteca.jpg">
-							<div class="overlay	">
+							<div class="overlay" onclick="open_project(startingup)">
 								<div class="project-text">
-									Starteca
+									StartingUp
 								</div>
 							</div>
-					</div>
+							<div id="startingup" class="startingup-box">
+								<div class="startingup-content">
+									<img style="width: 100%" src="images/starteca.jpg">
 
-					<div class="col-md-3 col-sm-6">
-						<img class="projetos" src="images/logo-preto-LESC.png">
-							<div class="overlay	">
-								<div class="project-text">
-									Em Breve
+									<p>O StartingUp é o programa de pré-aceleração da Liga de Empreendedorismo de São carlos e tem como objetivo dar o auxílio inicial para que nossos aspirantes as empreendedores de dentro das universidades e de São Carlos possam tirar suas ideias do papel.</p>
+
+									<p>O programa se destina para aqueles que ainda estão no estágio da ideia e passa os mentorados pelas fases de validação, desenvolvimento de plano de negócios, produto mínimo viável e product-market-fit.</p>
+
+									<p> Se interessou? Saiba mais <a href="preaceleracao.html">aqui</a> ou então entre em contato conosco!
 								</div>
 							</div>
 					</div>
@@ -177,18 +186,34 @@
 
 			</div>
 
-			<!-- Parterns
+			<!-- Partners 
 
 			<div class="container-fluid">
 				<div class="row" style="margin-bottom: 5px;">
 					<div class="col-md-12"><h2 style="background-color: #ff8800; color: white; padding: 35px;"> Nossos Parceiros </h2></div>
 					
 					<div class="col-md-12">
-						<ul class="partners">
+						<ul class="partners partners-big">
 						<li><img src="images/projeto1.png"></li>
 						<li><img src="images/projeto1.png"></li>
 						<li><img src="images/projeto1.png"></li>
 						<li><img src="images/projeto1.png"></li>
+						</ul>
+
+					</div>
+
+					<div class="col-md-12">
+						<ul class="partners partners-medium">
+						<li><img src="images/projeto1.png"></li>
+						<li><img src="images/projeto1.png"></li>
+						<li><img src="images/projeto1.png"></li>
+						<li><img src="images/projeto1.png"></li>
+						</ul>
+
+					</div>
+
+					<div class="col-md-12">
+						<ul class="partners partners-small">
 						<li><img src="images/projeto1.png"></li>
 						<li><img src="images/projeto1.png"></li>
 						<li><img src="images/projeto1.png"></li>
@@ -202,7 +227,6 @@
 			</div>
 
 			-->
-
 			<!-- Rodapé --> 
 			<div class="container-fluid">
 				
@@ -234,6 +258,12 @@
 	    	// Gallery transition
 
 	    	// Indexing the slides an calling the show slides for the first time
+	    	var slides = document.getElementsByClassName("Myslide");
+	    	if(slides.length == 1){
+	    		document.getElementById("prev").style.display = "none";
+	    		document.getElementById("next").style.display = "none";
+	    	}
+
 	    	var slideIndex = 1;
 	    	showSlides(slideIndex);
 
@@ -246,7 +276,7 @@
 	    	// Shows only the slide equals to slideindex - 1 at any given moment
 	    	function showSlides(n){
 	    		var i;
-	    		var slides = document.getElementsByClassName("Myslide");
+	    		slides = document.getElementsByClassName("Myslide");
 
 	    		// If we passed all slides, we come back to the first
 	    		if(n > slides.length){
@@ -270,6 +300,7 @@
 	    	// Projects popups
 	    	var chances = document.getElementById("chances");
 	    	var aproxima = document.getElementById("aproxima");
+	    	var startingup = document.getElementById("startingup")
 
 	    	function open_project(element){
 	    		element.style.display = "block";
@@ -281,6 +312,9 @@
 				  }
 				  else if(event.target == aproxima){
 				  	aproxima.style.display = "none";
+				  }
+				  else if(event.target == startingup){
+				  	startingup.style.display = "none"
 				  }
 			} 
 

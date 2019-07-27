@@ -75,7 +75,7 @@
 				
 				<div class="col-md-6">
 					
-					<form class="contact-form">
+					<form class="contact-form" method="post">
 
 						<div class="form-group">
 							<label for="text">Seu nome:</label>
@@ -92,9 +92,25 @@
 							<textarea id="mensagem" class="form-control" required></textarea>
 						</div>
 
-						<button type="submit" class="btn btn-primary btn-block" style="background-color: #FF8800; border: none;">Enviar</button>
+						<button type="submit" class="btn btn-primary btn-block" style="background-color: #FF8800; border: none;" onclick="sendMail()">Enviar</button>
 
 					</form>
+
+					<script type="text/javascript">
+
+						function sendMail(){
+							body = document.getElementById("mensagem").value;
+							window.open('mailto:lesc.contato@gmail.com?subject=Contato%20Via%20Site&body='+ body);
+						}
+
+					</script>
+
+					<!--
+					<?php 
+						mail("lesc.contato@gmail.com", $_POST['nome'] + "-" + $_POST['email'], 
+						$_POST['mensagem']);
+					?>
+					-->
 
 				</div>
 
@@ -128,14 +144,14 @@
 						<div class="container-fluid">
 							<div class="row">
 								<div class="col-md-6 footer-item">
-									<p>Siga-nos nas redes sociais!<br>
+									<p>Siga-nos nas redes sociais!<br><br>
 									<a href="https://www.facebook.com/ligadeempreendedorismosc/" target="_blank"><i class="fa fa-facebook-f" style="font-size:25px; color:white;"></i></a>
 									<a href="https://github.com/lesc-dev" target="_blank"><i class="fa fa-github" style="font-size: 25px; color:white;"></i></a>
 									<a href="https://www.linkedin.com/company/11278858" target="_blank"><i class="fa fa-linkedin" style="font-size:25px; color:white;"></i></a></p>
 
 								</div>
 								<div class="col-md-6 footer-item">
-									<p style="font-size: 25px;">Entre em contato conosco<br>
+									<p style="font-size: 25px;">Entre em contato conosco<br><br>
 									E-mail: lesc.contato@gmail.com</p>
 								</div>
 							</div>
