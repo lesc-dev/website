@@ -135,7 +135,7 @@ div[class*='col']{
 }
 
 .chances-content p{
-  text-align: center;
+  text-align: justify;
 }
 
 .aproxima-box{
@@ -328,4 +328,8 @@ div[class*='col']{
 
 .about_LESC_img{
   align-items: center;
+}
+
+.content-starting p{
+  padding: 25px;
 }
