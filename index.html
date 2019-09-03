@@ -130,12 +130,15 @@
 							</div>
 							<div id="aproxima" class="aproxima-box">
 								<div class="aproxima-content">
+									<span id="close-aproxima">&times;</span>
 									<img style="width: 100%" src="images/aproxima.png">
 									<p style="padding-top: 25px;"> O Aproxima é um projeto que tem como objetivo integrar 
 									os grupos extracurriculares das universidades de São Carlos,
 									promover e curar a criação de uma comunidade orgânica entre todos os players da cidade.</p>
 
 									<p> Por meio de grupos de contato, promoção de auxílios, trabalhos em conjunto e de happy hours, o Aproxima efetivamente aproxima os grupos e players para que juntos possamos desenvolver cada vez mais o ecossistema da nossa cidade.</p>
+
+									<p> O Aproxima também foi feito para curar a comunidade de pessoas interessadas em empreendedorismo da cidade. Para isso, o Aproxima Comunidade, um grupo do whatsapp, foi criado com o objetivo de permitir a interação mais próxima entre as pessoas e assim incentivar o ecossistema.</p>	
 
 									<p> Se interessou e quer saber mais? Entre em contato conosco e vamos conversar! </p>
 								</div>
@@ -151,6 +154,7 @@
 							</div>
 							<div id="chances" class="chances-box">
 								<div class="chances-content">
+									<span id="close-chances">&times;</span>
 									<img style="width: 100%" src="images/chances.png">
 
 									<p> Mais do que simplesmente criar empregos, o Chances quer criar oportunidades ideias. Um jovem tem sonhos, tem paixões e habilidades. A força que o faz levantar da cama todos os dias tem que ser a força que o faz trabalhar na certeza de estar cumprindo o seu papel no mundo.</p>
@@ -170,6 +174,7 @@
 							</div>
 							<div id="startingup" class="startingup-box">
 								<div class="startingup-content">
+									<span id="close-startingup">&times;</span>
 									<img style="width: 100%" src="images/startingup.png">
 
 									<p style="margin-top: 15px;">O StartingUp é o programa de pré-aceleração da Liga de Empreendedorismo de São carlos e tem como objetivo dar o auxílio inicial para que nossos aspirantes as empreendedores de dentro das universidades e de São Carlos possam tirar suas ideias do papel.</p>
@@ -299,8 +304,11 @@
 
 	    	// Projects popups
 	    	var chances = document.getElementById("chances");
+	    	var chances_close = document.getElementById("close-chances");
 	    	var aproxima = document.getElementById("aproxima");
+	    	var aproxima_close = document.getElementById("close-aproxima");
 	    	var startingup = document.getElementById("startingup")
+	    	var startingup_close = document.getElementById("close-startingup")
 
 	    	function open_project(element){
 	    		element.style.display = "block";
@@ -316,8 +324,19 @@
 				  else if(event.target == startingup){
 				  	startingup.style.display = "none"
 				  }
+			}
+
+			chances_close.onclick = function(){
+				chances.style.display = "none";
 			} 
 
+			aproxima_close.onclick = function(){
+				aproxima.style.display = "none";
+			}
+
+			startingup_close.onclick = function(){
+				startingup.style.display = "none";
+			}
 	    </script>
 
 	</body>
