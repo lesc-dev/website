@@ -190,12 +190,50 @@ div[class*='col']{
   text-align: justify;
 }
 
-.close:hover,
-.close:focus {
+/* The Close Button */
+.startingup-content span{
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.startingup-content span:hover,
+.startingup-content span:focus {
   color: black;
   text-decoration: none;
   cursor: pointer;
 }
+
+.chances-content span{
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.chances-content span:hover,
+.chances-content span:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.aproxima-content span{
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.aproxima-content span:hover,
+.aproxima-content span:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
 
 /* Partners Section */
 
@@ -331,5 +369,8 @@ div[class*='col']{
 }
 
 .content-starting p{
-  padding: 25px;
+  padding-left: 25px;
+  padding-right: 25px;
+  text-align: justify;
+  font-size: 19px;
 }
